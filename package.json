@@ -1,0 +1,21 @@
+{
+   "name": "api_boleto",
+   "version": "0.0.1",
+   "description": "Awesome project developed with TypeORM.",
+   "devDependencies": {
+      "@types/jest": "^27.5.1",
+      "@types/node": "^8.0.29",
+      "jest": "^27.0.6",
+      "ts-jest": "^27.0.4",
+      "ts-node": "3.3.0",
+      "typescript": "3.3.3333"
+   },
+   "dependencies": {
+      "express": "^4.15.4",
+      "body-parser": "^1.18.1"
+   },
+   "scripts": {
+      "start": "ts-node src/index.ts",
+      "test": "jest"
+   }
+}
