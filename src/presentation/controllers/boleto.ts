@@ -2,7 +2,7 @@ import { InvalidParamError, MissingParamError } from '../errors'
 import { badRequest, ok, serverError } from '../helpers/http-helper'
 import { Controller, HttpRequest, HttpRespose } from '../protocols'
 import { isDigit } from '../../utils/utils'
-import { BoletoValidadorController } from './boleto-validador'
+import { BoletoValidadorController } from '../../utils/boleto-validador'
 import { GetBoletoController } from './get-boleto'
 
 export class BoletoController implements Controller {

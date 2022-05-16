@@ -1,6 +1,8 @@
-import env from './config/env'
-import express from 'express'
+import * as express from 'express'
 import { Routes } from './routes/routes'
+import { Response, Request } from 'express'
+import env from './config/env'
+
 const app = express()
 
 Routes.forEach(route => {
@@ -16,4 +18,4 @@ Routes.forEach(route => {
   })
 })
 
-app.listen(env.port, () => console.log(`Server running at http://localhost:${env.port}`))
+app.listen(env.port, () => console.log(`Api inicializada em http://localhost:${env.port}`))

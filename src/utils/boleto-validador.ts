@@ -1,5 +1,5 @@
-import { BoletoValidator } from '../protocols/boleto-validator'
-import { modulo11 } from '../../utils/utils'
+import { BoletoValidator } from '../presentation/protocols/boleto-validator'
+import { modulo11 } from './utils'
 
 export class BoletoValidadorController implements BoletoValidator {
   isValid (barCode: string): boolean {
